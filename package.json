@@ -1,19 +1,19 @@
 {
-  "name": "writing-sass",
+  "name": "omyfood",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "Plats à emporter",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "git+https://github.com/Kent-33/omyfood.git"
   },
   "author": "gerkx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    "url": "https://github.com/Kent-33/omyfood/issues"
   },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+  "homepage": "https://github.com/Kent-33/omyfood.git#readme"
 }
