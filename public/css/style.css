@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  transition: 0.3s; }
+
 *,
 *::after,
 *::before {
@@ -6,22 +9,89 @@
   padding: 0;
   box-sizing: inherit; }
 
+img {
+  max-width: 100%; }
+
+.icon {
+  width: 16px; }
+
+li {
+  list-style: none; }
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #9356DC;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7; }
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2; }
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-weight: 900;
-  font-size: 5rem; }
+  font-size: 32px; }
+
+a {
+  color: #1a1a1a;
+  text-decoration: unset; }
+
+.btn-wrapper {
+  padding: 16px 32px; }
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 25px;
+  color: #fff; }
+  .btn-primary {
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%); }
+    .btn-primary:hover {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%); }
 
 .header {
-  background: #fff;
-  box-shadow: 5px 5px 5px #1a1a1a;
-  width: 100%;
-  padding: 15px 0; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0; }
+  .header__logo {
+    padding: 16px 0;
+    box-shadow: 0px 4px 4px #b3b3b3;
+    z-index: 1;
+    text-align: center; }
+    .header__logo .logo {
+      min-width: 200px; }
+  .header__location {
+    background-color: #e6e6e6;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px; }
+
+.container {
+  max-width: 360px;
+  margin: auto; }
+
+footer {
+  padding: 32px;
+  background-color: #343434;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0; }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    color: #fff;
+    margin-bottom: 16px; }
+  footer a {
+    color: #fff;
+    line-height: 1.6; }
+    footer a:hover {
+      text-decoration: underline; }
+  footer .illus-link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px; }
+
+.hero {
+  padding: 64px 0; }
+  .hero > * {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

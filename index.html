@@ -10,11 +10,12 @@
 
 <body>
     <header class="header">
-        <h1 class="header__logo">
-            ohmyfood
-        </h1>
+        <div class="header__logo">
+            <img class="logo" src="./img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+        </div>
+        
         <div class="header__location">
-            <span class="location__icon"><img src="./img/location.svg" alt=""></span>
+            <span class="location__icon"><img class="icon" src="./img/svg/location.svg" alt=""></span>
             <p>Paris, Belleville</p>
         </div>        
     </header>
@@ -27,7 +28,8 @@
         </section>
 
         <section class="fonctionnement">
-            <ul class="fontionnement__list">
+            <h2></h2>
+            <ol class="fontionnement__list">
                 <li class="item">
                     <span class="icon"><img src="./img/phone.svg" alt=""></span>
                     <p>Choisissez un restaurant</p>
@@ -40,22 +42,21 @@
                     <span class="icon"><img src="./img/shop.svg" alt=""></span>
                     <p>Dégustez au restaurant</p>
                 </li>
-            </ul>
+            </ol>
         </section>
 
         <section class="restaurants">
-            <h2>Hébergements à Marseille</h2>
+            <h2>Restaurants</h2>
             <div class="restaurants_list flex">
                 <a href="#" class="item">
                     <div class="illus">
                         <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du goût">
-                        <p>Nouveau</p>
+                        <span>Nouveau</span>
                     </div>       
                     <div class="item_info">
-                        <h3>Auberge La Canebière</h3>
-                        <p>Nuit à partir de <span class="hebergement_price">25€</span></p>
-                    </div>
-                    <i class="fa-solid fa-heart"></i>
+                        <h3>La palette du goût</h3>
+                        <p>Charonne</p>
+                        <span><i class="fa-solid fa-heart"></i></span>
                     </div>
                 </a>
             </div>
@@ -63,10 +64,12 @@
         
     </main>
 
-    <footer>
+    <footer class="container">
         <h2>ohmyfood</h2>
-        <li><a href=""><img src=".img/knif-fork.svg" alt=""><span>Proposer un restaurant</span></a></li>
-        <li><a href=""><img src=".img/partenaire.svg" alt=""><span>Devenir partenaire</span></a></li>
+        <li><a class="illus-link" href=""><img class="icon" src="./img/svg/knife-fork.svg" alt=""><span>Proposer un restaurant</span></a></li>
+        <li><a class="illus-link" href=""><img class="icon" src="./img/svg/handshake.svg" alt=""><span>Devenir partenaire</span></a></li>
+        <li><a href=""><span>Mentions légales</span></a></li>
+        <li><a href=""><span>Contact</span></a></li>
     </footer>
 </body>
 </html>

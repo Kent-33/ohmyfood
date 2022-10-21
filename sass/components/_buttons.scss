@@ -1,1 +1,14 @@
-
+.btn-wrapper {
+    padding: $p-m $p-l;
+}
+.btn {
+    padding: $p-m $p-l;
+    border-radius: 25px;
+    color:$color-white;
+    &-primary {
+        background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        &:hover {
+            background: linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
+        }
+    }
+}

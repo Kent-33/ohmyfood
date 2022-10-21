@@ -1,0 +1,14 @@
+@mixin flex-col ($gap:0, $justify-content:center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+@mixin flex-row ($gap:0, $justify-content:center) {
+    display: flex;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+@mixin text-center {
+    text-align: center;
+}

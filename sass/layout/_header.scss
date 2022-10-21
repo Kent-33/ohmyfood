@@ -1,6 +1,17 @@
 .header {
-    background: $colour-white;
-    box-shadow: 5px 5px 5px $colour-black;
-    width: 100%;
-    padding: 15px 0;   
+    @include flex-col;
+    &__logo {
+        padding: $p-m 0;
+        box-shadow: 0px 4px 4px lighten($color-black, 60%);
+        z-index: 1;
+        @include text-center;
+        .logo {            
+            min-width: 200px;
+        }
+    }
+    &__location {
+        background-color: darken($color-white, 10%);
+        padding: $p-m 0;        
+        @include flex-row($p-s);
+    }   
 }

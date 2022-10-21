@@ -1,0 +1,20 @@
+footer {
+    padding: $p-l;
+    background-color: lighten($color-black, 10%);
+    @include flex-col;
+    h2 {
+        font-family: $heading-font;
+        color: $color-white;
+        margin-bottom: $p-m;
+    }
+    a {
+        color: $color-white;        
+        line-height: 1.6;
+        &:hover {
+            text-decoration: underline;
+        } 
+    }
+    .illus-link {
+        @include flex-row($p-s, flex-start);
+    }
+}

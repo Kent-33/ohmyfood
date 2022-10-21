@@ -1,0 +1,6 @@
+.hero {
+    padding: $p-xl 0;
+    > * {
+        @include text-center;
+    }
+}
