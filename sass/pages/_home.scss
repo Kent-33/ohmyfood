@@ -1,6 +1,114 @@
 .hero {
-    padding: $p-xl 0;
-    > * {
-        @include text-center;
+    @include text-center;
+    p {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+.fonctionnement {
+    &__list {
+        .item {
+            position: relative;
+            font-weight: 700;
+            padding: 20px 35px;
+            box-shadow: 1px 6px 13px 0px lighten($color-black, 85%);
+            border-radius: $p-m;
+            &:not(:last-child) {
+                margin-bottom: $p-l;
+            }
+            i {
+                font-size: 24px;
+                color: lighten($color-black, 50%);
+                padding-right: $p-l;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: $p-l;
+                height: $p-l;
+                font-weight: 400;
+                line-height: $p-l;
+                color: $color-white;
+                text-align: center;
+                border-radius: $p-l;
+                background-color: $color-primary;
+                
+                
+                transform: translateX(-50%) translateY(50%);
+            }
+            &:nth-child(1)::before {
+                content: '1';
+            }
+            &:nth-child(2)::before {
+                content: '2';
+            }
+            &:nth-child(3)::before {
+                content: '3';
+            }
+
+            &:hover {
+                background-color: lighten($color-primary, 35%);
+                i {
+                    color: $color-primary;
+                }
+            }
+        }
+
+
+    }
+}
+
+.restaurants {
+    &__list {
+        .item {
+            position: relative;
+            border-radius: $p-m;
+            background-color: $color-white;
+            box-shadow: 2px 2px 18px 5px lighten($color-black, 80%);
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+            .illus {
+                border-radius: $p-m $p-m 0 0;
+            }
+            .tag {
+                position: absolute;
+                top: $p-m;
+                right: $p-m;
+                font-size: 14px;
+                font-weight: 500;
+                padding: $p-s;
+                color: darken($color-tertiary, 33%);
+                background-color: $color-tertiary;
+                border-radius: 3px;
+            }
+            .item_info {                
+                position: relative;
+                padding: $p-m;
+                i {
+                    position: absolute;
+                    font-size: 30px;
+                    top: 0;
+                    right: $p-m;
+                    transform: translateY(50%);
+                    z-index: 3;
+                    &:last-child {
+                        color: $color-primary;
+                        opacity: 0;
+                        transition: .3s;                        
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

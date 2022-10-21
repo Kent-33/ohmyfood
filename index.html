@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/284e765505.js" crossorigin="anonymous"></script>    
     <title>ohmyfood - Plats à emporter</title>
 </head>
 
@@ -15,50 +16,47 @@
         </div>
         
         <div class="header__location">
-            <span class="location__icon"><img class="icon" src="./img/svg/location.svg" alt=""></span>
+            <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>        
     </header>
    
-    <main class="container">
-        <section class="hero">
+    <main>
+        <section class="container hero">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
             <a href="" class="btn btn-primary">Explorer nos restaurants</a>
         </section>
 
-        <section class="fonctionnement">
-            <h2></h2>
-            <ol class="fontionnement__list">
+        <section class="container fonctionnement">
+            <h2>Fonctionnement</h2>
+            <ol class="fonctionnement__list">
                 <li class="item">
-                    <span class="icon"><img src="./img/phone.svg" alt=""></span>
-                    <p>Choisissez un restaurant</p>
+                    <i class="fa-solid fa-mobile"></i> Choisissez un restaurant 
                 </li>
                 <li class="item">
-                    <span class="icon"><img src="./img/menu.svg" alt=""></span>
-                    <p>Composez votre menu</p>
+                    <i class="fa-solid fa-list-ul"></i> Composez votre menu
                 </li>
                 <li class="item">
-                    <span class="icon"><img src="./img/shop.svg" alt=""></span>
-                    <p>Dégustez au restaurant</p>
+                    <i class="fa-solid fa-store"></i> Dégustez au restaurant
                 </li>
             </ol>
         </section>
 
-        <section class="restaurants">
+        <section class="container restaurants">
             <h2>Restaurants</h2>
-            <div class="restaurants_list flex">
-                <a href="#" class="item">
-                    <div class="illus">
-                        <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du goût">
-                        <span>Nouveau</span>
-                    </div>       
+            <div class="restaurants__list flex">                
+                <div class="item">
+                    <a href="#"></a>
+                    <img class="illus" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du goût">     
+                    <span class="tag">Nouveau</span>
                     <div class="item_info">
                         <h3>La palette du goût</h3>
                         <p>Charonne</p>
-                        <span><i class="fa-solid fa-heart"></i></span>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
         
@@ -66,8 +64,8 @@
 
     <footer class="container">
         <h2>ohmyfood</h2>
-        <li><a class="illus-link" href=""><img class="icon" src="./img/svg/knife-fork.svg" alt=""><span>Proposer un restaurant</span></a></li>
-        <li><a class="illus-link" href=""><img class="icon" src="./img/svg/handshake.svg" alt=""><span>Devenir partenaire</span></a></li>
+        <li><a class="illus-link" href=""><i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+        <li><a class="illus-link" href=""><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
         <li><a href=""><span>Mentions légales</span></a></li>
         <li><a href=""><span>Contact</span></a></li>
     </footer>
