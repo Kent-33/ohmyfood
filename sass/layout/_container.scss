@@ -1,4 +1,11 @@
-.container {
-    max-width: 360px;
-    margin: auto;
+
+/* Uniquement sur Tablettes */
+
+@media screen and (min-width: 992px) {
+    .container {
+        .content {
+            max-width: 1400px;
+            margin: auto;
+        }
+    }
 }

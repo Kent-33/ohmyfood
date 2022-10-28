@@ -1,7 +1,9 @@
-footer {
-    padding: $p-l;
+footer {    
     background-color: lighten($color-black, 10%);
-    @include flex-col;
+    .content {
+        padding: $p-l;
+        @include flex-col;
+    }
     h2 {
         font-family: $heading-font;
         color: $color-white;
@@ -15,5 +17,13 @@ footer {
     }
     .illus-link {
         @include flex-row($p-s, flex-start);
+    }
+}
+
+/* Uniquement sur grand écran */
+
+@media screen and (min-width: 768px) {
+    .footer-nav {
+        @include flex-row (20px, flex-start, wrap)
     }
 }
