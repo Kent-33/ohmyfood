@@ -22,9 +22,7 @@ img {
 li {
     list-style: none;
 }
-section:nth-child(odd) {
-    background-color: darken($color-white, 2%);
-}
+
 .container .content {
     padding: $p-xl $p-l;
 }

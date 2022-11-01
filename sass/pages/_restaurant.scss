@@ -1,0 +1,113 @@
+#page-restaurant-single {
+    .content {
+        padding: $p-l $p-m $p-s;
+    }
+    .header {        
+        &__top {
+            padding: 0 $p-m;
+            @include flex-row(0, space-between, nowrap, center);
+        } 
+        &__back-home i {
+            font-size: 22px;
+        }           
+        &__logo {
+            box-shadow: none;
+            width: calc(100% - 20px);
+        }
+        &__banner img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    main {
+        position: relative;
+        top: -50px;
+        border-radius: 30px 30px 0 0;
+        background-color: darken($color-white, 2%);;
+    }
+    .hero {
+        position: relative;
+       &__favorite {
+            i {
+                position: absolute;
+                font-size: 30px;
+                top: $p-m;
+                right: $p-m;
+                transform: translateY(50%);
+                z-index: 2;
+                &:last-child {
+                    color: $color-primary;
+                    opacity: 0;
+                    transition: .3s;                        
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+       }
+    }
+    .plats {
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 4px;
+            text-transform: uppercase;
+        }     
+        hr {
+            height: 3px;                
+            width: 50px;
+            margin-right: auto;
+            margin-bottom: $p-m;
+            background-color: $color-tertiary;
+            border: unset;
+        }
+        &__list {
+            @include flex-col(15px)
+        }
+        .item {       
+            height: 60px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 2px 2px 18px 5px lighten($color-black, 80%);
+            @include flex-row(0, space-between, nowrap, center);
+            &__left {
+                width: 100%;                
+                padding: $p-s $p-m;
+            }
+            &__info {                
+                font-size: 14px;
+                @include flex-row(0, space-between);
+                .price {
+                    font-weight: 600;
+                }
+            }
+           &__check {
+                display: none;
+                opacity: 0;
+                height: 100%;
+                width: 20%;
+                text-align: center;
+                background-color: $color-tertiary;
+                border-radius: 0 15px 15px 0;
+                transition: 0.3s;
+                i {
+                    font-size: 18px;
+                    line-height: 60px;
+                    color: $color-white;
+                }
+           }
+           &:hover {
+            .item__check {
+                display: block;
+                opacity: 1;
+               }
+           }        
+        }
+    }
+    .commander {
+        .content {
+            text-align: center;
+        }
+    }
+}
