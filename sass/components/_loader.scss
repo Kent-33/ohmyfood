@@ -1,0 +1,10 @@
+.loader {
+    border: $p-m solid lighten($color-primary,  30%);
+    border-top: $p-m solid $color-primary;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    transition: transform 250ms cubic-bezier(.32,0,.07,1);
+    animation: load 2s linear infinite;
+  }

@@ -7,8 +7,10 @@
     color:$color-white;
     &-primary {
         background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        box-shadow: 2px 7px 19px 1px lighten($color-black, 60%);
         &:hover {
-            background: linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
+            background: linear-gradient(0deg, $color-primary-light 0%, $color-secondary-light 100%);
+            box-shadow: 2px 7px 19px 1px lighten($color-black, 40%);
         }
     }
 }
