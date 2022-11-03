@@ -10,7 +10,7 @@
     transform: translateY(100%);
     opacity: 0; }
   100% {
-    transform: translateY();
+    transform: translateY(0);
     opacity: 1; } }
 * {
   transition: 0.3s; }
