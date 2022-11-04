@@ -397,6 +397,12 @@ footer {
   #page-restaurant-single .plats .item__left {
     width: 100%;
     padding: 8px 16px; }
+    #page-restaurant-single .plats .item__left h3, #page-restaurant-single .plats .item__left .item__desc {
+      width: fit-content;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: width 0.6s cubic-bezier(0.32, 0, 0.07, 1); }
   #page-restaurant-single .plats .item__info {
     font-size: 14px;
     display: flex;
@@ -420,6 +426,9 @@ footer {
       color: #fff;
       transform: rotate(90deg);
       transition: transform 300ms ease-in-out; }
+  #page-restaurant-single .plats .item:hover h3, #page-restaurant-single .plats .item:hover .item__desc {
+    max-width: 250px;
+    transition: width 0.6s cubic-bezier(0.32, 0, 0.07, 1); }
   #page-restaurant-single .plats .item:hover .item__check {
     width: 60px;
     transform-origin: right;
