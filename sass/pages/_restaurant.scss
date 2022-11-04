@@ -69,10 +69,11 @@
         .item {       
             height: 60px;
             width: 100%;
+            transform: translateY(18px);
+            opacity: 0;
             border-radius: 15px;
             box-shadow: 2px 2px 18px 5px lighten($color-black, 80%);            
             overflow: hidden;
-
             @include flex-row(0, space-between, nowrap, center);
             &__left {
                 width: 100%;                
@@ -91,8 +92,7 @@
                 text-align: center;
                 background-color: $color-tertiary;
                 border-radius: 0 15px 15px 0;                
-                transform: translateX(150%);                
-                transition: transform 250ms cubic-bezier(.32,0,.07,1);
+                transition: width 0.6s cubic-bezier(.32,0,.07,1);
                 i {
                     font-size: 18px;
                     line-height: 60px;
@@ -104,9 +104,8 @@
            &:hover {
             .item__check {                
                 width: 60px;
-                transform-origin: right;                                  
-                transform: translateX(0);               
-                transition: transform 500ms cubic-bezier(.32,0,.07,1);
+                transform-origin: right;                
+                transition: width 0.4s cubic-bezier(.32,0,.07,1);
                 i {
                     transform: rotate(360deg);
                     transition: transform 400ms ease-in-out;
@@ -114,20 +113,34 @@
                }
             }
             &:first-child {
-                @include loading-fade-up(.3s);
+                @include loading-fade-up(.2s);
             }    
             &:nth-child(2) {
-                @include loading-fade-up(.6s);
+                @include loading-fade-up(.4s);  
             }    
-            &:last-child {
-                @include loading-fade-up(.9s);
+            &:nth-child(3) {
+                @include loading-fade-up(.6s);  
             }    
+            &:nth-child(4) {
+                @include loading-fade-up(.8s);  
+            }    
+            &:nth-child(5) {
+                @include loading-fade-up(1s);  
+            }  
         }
     }
     .commander {
         .content {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: $p-l;
+            .btn {
+                margin: auto;
+            }
         }
+    }
+    footer {
+        margin-top: -50px;
     }
 }
 

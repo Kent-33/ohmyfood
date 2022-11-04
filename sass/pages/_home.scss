@@ -6,13 +6,17 @@
         }
     }
     section:nth-child(odd) {
-        background-color: darken($color-white, 2%);
+        background-color: darken($color-white, 4%);
     }
     .hero {
         @include text-center;
-        p {
-            margin-top: 15px;
-            margin-bottom: 40px;
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .btn {
+            margin: auto;
         }
     }
 }
@@ -22,10 +26,11 @@
         .item {
             position: relative;
             font-weight: 700;
-            padding: 20px 35px;
+            padding: 20px 25px;
+            background-color: darken($color-white, 4%);;
             box-shadow: 1px 6px 13px 0px lighten($color-black, 85%);
             border-radius: $p-m;
-            max-width: 300px;
+            width: 100%;
             a {
                 position: absolute;
                 top: 0;
@@ -34,9 +39,9 @@
                 height: 100%;
             }
             i {
-                font-size: 24px;
+                font-size: 18px;
                 color: lighten($color-black, 50%);
-                padding-right: $p-l;
+                padding-right: $p-s;
             }
             &::before {
                 position: absolute;
@@ -126,11 +131,25 @@
                     }
                 }
             }
+            &:hover {                
+                transform: translateY(-10px);               
+                transition: transform 0.3s cubic-bezier(.32,0,.07,1);
+            }
         }
     }
 }
 
 @media screen and (min-width: 768px) {
+    .fonctionnement__list {
+        .item {
+            padding: 20px 35px;        
+            max-width: 300px;
+            i {
+                font-size: 24px;
+                padding-right: 24px
+            }
+        }
+    }
     .restaurants__list {
         @include flex-row(30px);
         .item {            
