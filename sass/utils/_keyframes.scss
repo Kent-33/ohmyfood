@@ -12,7 +12,7 @@
     100% {
         opacity: 0;
         display: none;
-     }
+    }
 }
 @keyframes load {
     0% {
@@ -20,7 +20,7 @@
     }
     100% { 
         transform: rotate(360deg);
-     }
+    }
 }
 
 @keyframes fade-up {

@@ -17,7 +17,6 @@
 @mixin text-center {
     text-align: center;
 }
-
 @mixin loading-fade-up($delay:0) {
     animation : fade-up 0.6s ease-out;                    
     animation-fill-mode: forwards;

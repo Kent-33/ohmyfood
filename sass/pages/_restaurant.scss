@@ -46,7 +46,7 @@
                     }
                 }
             }
-       }
+        }
     }
     .plats {
         h2 {
@@ -72,13 +72,13 @@
             transform: translateY(18px);
             opacity: 0;
             border-radius: 15px;
-            box-shadow: 2px 2px 18px 5px lighten($color-black, 80%);            
+            box-shadow: 2px 2px 18px 5px lighten($color-black, 80%);         
             overflow: hidden;
             @include flex-row(0, space-between, nowrap, center);
             &__left {
                 width: 100%;                
                 padding: $p-s $p-m;
-                h3, .item__desc {
+                h3, .item__info p:first-child {
                     width: fit-content;
                     white-space: nowrap;
                     overflow: hidden;
@@ -93,7 +93,7 @@
                     font-weight: 600;
                 }
             }
-           &__check {
+            &__check {
                 height: 100%;
                 width: 0;
                 text-align: center;
@@ -107,21 +107,23 @@
                     transform: rotate(90deg);
                     transition: transform 300ms ease-in-out;
                 }
-           }
-           &:hover {
-            h3, .item__desc {
-                max-width: 250px;                
-                transition: width 0.6s cubic-bezier(.32,0,.07,1);
-            } 
-            .item__check {                
-                width: 60px;
-                transform-origin: right;                
-                transition: width 0.4s cubic-bezier(.32,0,.07,1);
-                i {
-                    transform: rotate(360deg);
-                    transition: transform 400ms ease-in-out;
+            }
+            &:hover {
+                .item__left {
+                    h3, .item__info p:first-child {
+                        max-width: 240px;                
+                        transition: width 0.6s cubic-bezier(.32,0,.07,1);
+                    } 
                 }
-               }
+                .item__check {                
+                    width: 60px;
+                    transform-origin: right;                
+                    transition: width 0.4s cubic-bezier(.32,0,.07,1);
+                    i {
+                        transform: rotate(360deg);
+                        transition: transform 400ms ease-in-out;
+                    }
+                }
             }
             &:first-child {
                 @include loading-fade-up(.2s);
