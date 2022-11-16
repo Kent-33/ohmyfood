@@ -186,12 +186,13 @@ footer {
   align-items: center; }
   .fonctionnement__list .item {
     position: relative;
+    width: 100%;
+    max-width: 230px;
     font-weight: 700;
-    padding: 20px 25px;
+    padding: 20px 8vw;
     background-color: whitesmoke;
     box-shadow: 1px 6px 13px 0px #f3f3f3;
-    border-radius: 16px;
-    width: 100%; }
+    border-radius: 16px; }
     .fonctionnement__list .item a {
       position: absolute;
       top: 0;
@@ -201,20 +202,21 @@ footer {
     .fonctionnement__list .item i {
       font-size: 18px;
       color: #9a9a9a;
-      padding-right: 8px; }
+      padding-right: 4vw; }
     .fonctionnement__list .item::before {
       position: absolute;
       top: 0;
       left: 0;
-      width: 32px;
-      height: 32px;
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
       font-weight: 400;
-      line-height: 32px;
+      line-height: 25px;
       color: #fff;
       text-align: center;
       border-radius: 32px;
       background-color: #9356DC;
-      transform: translateX(-50%) translateY(50%); }
+      transform: translateX(-60%) translateY(70%); }
     .fonctionnement__list .item:nth-child(1)::before {
       content: '1'; }
     .fonctionnement__list .item:nth-child(2)::before {

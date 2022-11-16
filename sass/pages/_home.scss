@@ -24,13 +24,14 @@
     &__list {
         @include flex-row(30px, flex-start, wrap, center);
         .item {
-            position: relative;
+            position: relative;      
+            width: 100%;
+            max-width: 230px;
             font-weight: 700;
-            padding: 20px 25px;
+            padding: 20px 8vw;
             background-color: darken($color-white, 4%);;
             box-shadow: 1px 6px 13px 0px lighten($color-black, 85%);
-            border-radius: $p-m;
-            width: 100%;
+            border-radius: $p-m;            
             a {
                 position: absolute;
                 top: 0;
@@ -41,21 +42,22 @@
             i {
                 font-size: 18px;
                 color: lighten($color-black, 50%);
-                padding-right: $p-s;
+                padding-right: 4vw;
             }
             &::before {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: $p-l;
-                height: $p-l;
+                width: 25px;
+                height: 25px;
+                font-size: 12px;
                 font-weight: 400;
-                line-height: $p-l;
+                line-height: 25px;
                 color: $color-white;
                 text-align: center;
                 border-radius: $p-l;
                 background-color: $color-primary;   
-                transform: translateX(-50%) translateY(50%);
+                transform: translateX(-60%) translateY(70%);
             }
             &:nth-child(1)::before {
                 content: '1';
