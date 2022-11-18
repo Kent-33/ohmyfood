@@ -22,7 +22,7 @@
 }
 .fonctionnement {
     &__list {
-        @include flex-row(30px, flex-start, wrap, center);
+        @include flex-col(30px, flex-start, wrap, center);
         .item {
             position: relative;      
             width: 100%;
@@ -150,7 +150,6 @@
         }
     }
     .restaurants__list {
-        @include flex-row(30px);
         .item {            
             width: calc(50% - 30px/2);
         }
@@ -161,7 +160,6 @@
 
 @media screen and (min-width: 992px) {
     .fonctionnement__list {
-        @include flex-row (30px, flex-start);
         .item:last-child {
             margin-bottom: $p-l;
         }
